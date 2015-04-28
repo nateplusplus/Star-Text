@@ -16,32 +16,22 @@ body {
     width: 100%;
 }
 
-/* source: http://codersblock.com/blog/creating-glow-effects-with-css/ */
-
-#halo {
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow:
-        0 0 60px 30px #fff,  /* inner white */
-        0 0 100px 60px #f0f, /* middle magenta */
-        0 0 140px 90px #0ff; /* outer cyan */
-    /* in order: x offset, y offset, blur size, spread size, color */
-    /* blur size and spread size are optional (they default to 0) */
-    z-index: 1;
-}
-
 #symbol {
     position: absolute;
     color:azure;
     height: 100%;
     width: 100%;
-    font: 2em;
-    background: url(dollas.svg);
-    background-position: center;
-    background-size:contain;
+    font-size: 30px;
     z-index: 2;
-    opacity: .5;
+    text-shadow: 0px 0px 5px #FFF;
+}
+
+#halo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 70px;
+    color: rgba(0,0,0,0);
+    z-index: 2;
+    text-shadow: 0px 0px 30px #FFF, 0px 0px 30px blue;
 }
