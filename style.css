@@ -4,34 +4,37 @@ body {
 
 #container {
     position: relative;
-    display: block;
-    top: 50px;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-#star {
-    height: 100%;
     width: 100%;
+    padding-top: 60%;
 }
 
-#symbol {
+.star {
     position: absolute;
-    color:azure;
-    height: 100%;
-    width: 100%;
-    font-size: 30px;
-    z-index: 2;
-    text-shadow: 0px 0px 5px #FFF;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 100% sans-serif;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    text-shadow:
+        0 0 10px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,1),
+        0 0 30px rgba(255,255,255,1),
+        0 0 30px cyan,                      /* Halo Color */
+        0 0 40px rgba(200, 200, 255, 1),
+        0 0 70px rgba(200, 200, 255, 1),
+        0 0 80px rgba(200, 200, 255, 1),
+        0 0 100px rgba(200, 200, 255, 1);
 }
 
-#halo {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-size: 70px;
-    color: rgba(0,0,0,0);
-    z-index: 2;
-    text-shadow: 0px 0px 30px #FFF, 0px 0px 30px blue;
-}
+
+/* star positioning */
+
+.star:nth-child(1) { top:10%; left:10%; font-size: 1em; }
+.star:nth-child(2) { top:9%; left:25%; font-size: 1.5em; }
+.star:nth-child(3) { top:20%; left:35%; font-size: 1.5em; }
+.star:nth-child(4) { top:32%; left:45%; font-size: 1em; }
+.star:nth-child(5) { top:65%; left:47%; font-size: 1.5em; }
+.star:nth-child(6) { top:37%; left:90%; font-size: 1em; }
+.star:nth-child(7) { top:70%; left:85%; font-size: 1.5em; }
