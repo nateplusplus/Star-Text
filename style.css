@@ -3,7 +3,8 @@ h1, h2, h3, h4, h5, h6, p, body {     /*reset for mobile browsers */
 }
 
 body {
-    background: black;
+    background: url('space-tile.jpg') black;
+    background-attachment: fixed;
 }
 
 #container {
