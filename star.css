@@ -1,0 +1,22 @@
+/*  Star-Text
+ *  By Nathan Blair
+ *
+ *   Star Effect CSS
+ *   
+ *   This experimental code snippet is part of a larger project in an effort
+ *   to create a bunch of stars out of ancient symbols.
+ *
+ *   Copy the following code into your CSS stylesheet.
+ *
+ */
+
+
+.star {
+    color: rgba(255,255,255,1);             /* Font Color */
+    text-shadow:
+        0 0 10px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,1),
+        0 0 30px rgba(255,255,255,1),
+        0 0 30px cyan,                      /* Halo Color */
+        0 0 40px rgba(200, 200, 255, 1);
+}

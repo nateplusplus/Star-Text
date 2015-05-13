@@ -1,20 +1,15 @@
-/*  Symbol_Stars
+/*  Star-Text
  *  By Nathan Blair
  *
  *  Style Sheet
- *   
- *   This experimental code snippet is part of a larger project in an effort
- *   to create a bunch of stars out of ancient symbols.
  *
- *      1.0 - CSS Resets
- *      2.0 - Body Elements
- *      3.0 - Star Effect
- *      4.0 - Positioning
+ *  This stylesheet is simply for the positioning on the example page.
+ *  Use the code on "star.css" to apply effect to your website.
  *
  */
 
 
-/* 1.0 CSS Resets
+/* CSS Resets
  *
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
@@ -71,7 +66,7 @@ h1, h2, h3, h4, h5, h6, p, body {
 }
 
 
-/* 2.0 Body Elements */
+/* Body Elements */
 
 body {
     background: url('space-tile.jpg') black;
@@ -85,35 +80,14 @@ body {
 }
 
 
-/* 3.0 Star Effect */
+/* Typography */
 
-.star {
-    position: absolute;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font: normal normal 100%/1.5 sans-serif;
-    font-weight: normal;
-    color: rgba(255,255,255,1);
-    text-align: center;
-    text-shadow:
-        0 0 10px rgba(255,255,255,1),
-        0 0 20px rgba(255,255,255,1),
-        0 0 30px rgba(255,255,255,1),
-        0 0 30px cyan,                      /* Halo Color */
-        0 0 40px rgba(200, 200, 255, 1);
-    
-        /* any shadow set to higher than 60px is for some reason
-        duplicated on mobile devices. Working on fix. */
-    
-        /* 0 0 60px rgba(200, 200, 255, 1),
-        0 0 80px rgba(200, 200, 255, 1),
-        0 0 100px rgba(200, 200, 255, 1) */
-}
+.star { font: normal normal 100%/1.5 sans-serif; }
 
 
-/* 4.0 Positioning */
+/* Positioning */
+
+.star { position: absolute; display: inline-block; }
 
 .star:nth-child(1) { top:10%; left:10%; font-size: 1em; }
 .star:nth-child(2) { top:9%; left:25%; font-size: 1.5em; }
